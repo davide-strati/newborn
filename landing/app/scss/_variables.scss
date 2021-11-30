@@ -1,0 +1,114 @@
+/* -------------------- BREAKPOINTS --------------------*/
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+  xxxxl: 1900px
+);
+
+/* -------------------- REGOLE LAYOUT --------------------*/
+
+// Grid containers
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1400px
+) ;
+
+// Bootstrap overrides variables
+// $primary: #6610f2;
+
+// >>> Colors
+// > PRIMARY
+$primary: #EFE3D1;
+
+$primary-100: tint-color($primary, 8) !default;
+$primary-200: tint-color($primary, 6) !default;
+$primary-300: tint-color($primary, 4) !default;
+$primary-400: tint-color($primary, 2) !default;
+$primary-500: $primary !default;
+$primary-600: shade-color($primary, 2) !default;
+$primary-700: shade-color($primary, 4) !default;
+$primary-800: shade-color($primary, 6) !default;
+$primary-900: shade-color($primary, 8) !default;
+
+// > GRAY SCALE
+$gray: #898989;
+$gray-100: tint-color($gray, 8) !default;
+$gray-200: tint-color($gray, 6) !default;
+$gray-300: tint-color($gray, 4) !default;
+$gray-400: tint-color($gray, 2) !default;
+$gray-500: $gray !default;
+$gray-600: shade-color($gray, 2) !default;
+$gray-700: shade-color($gray, 4) !default;
+$gray-800: shade-color($gray, 6) !default;
+$gray-900: shade-color($gray, 8) !default;
+
+// > Gradients
+$gradient-siena: radial-gradient(105.56% 105.56% at 2.83% 3.99%, rgba(236, 234, 223, 0.2604) 0%, rgba(131, 61, 22, 0.42) 100%), #FED365;;
+$gradient-siena-hover: radial-gradient(105.56% 105.56% at 2.83% 3.99%, rgba(236, 234, 223, 0.372) 0%, rgba(131, 61, 22, 0.6) 100%), #FCBE21;
+$gradient-verde-cta: radial-gradient(105.56% 105.56% at 2.83% 3.99%, rgba(223, 236, 226, 0.2604) 0%, rgba(22, 131, 59, 0.42) 100%), #C9E7A4;
+$gradient-verde-cta-hover: radial-gradient(105.56% 105.56% at 2.83% 3.99%, rgba(223, 236, 226, 0.372) 0%, rgba(14, 87, 39, 0.6) 100%), #AEE06E;
+// >>> Typo
+$bs-font-sans-serif: 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$body-text: $primary-700;
+
+// Layout elements
+$sfondo-header: $gray-900;
+$sfondo-intro: url('../images/bg/sfondo-lente.webp') no-repeat scroll center right transparent;
+
+
+
+// Variables
+
+// Colors
+:root {
+  --secondary: #E8DFD8;
+  --secondary-s-2: #D56F38;
+  --verde-cta: #35B29C;
+  --verde-cta-l-1: #38D2B7; 
+  --verde-cta-l-2: #87F3E0;
+  --bg-brown-gradient: url("../images/bg/ondulate-cyan-pattern.png") repeat,
+  radial-gradient(64.22% 64.22% at 12.81% 16.91%, rgba(245, 240, 210, 0.2352) 0%, rgba(0, 0, 0, 0.24) 85.94%), #514545;
+  --bg-light-brown-waves: url('../images/bg/light-brown-waves.jpg');
+
+  --sfondo-portfolio: var(--bg-brown-gradient);
+  --sfondo-contatti: var(--bg-light-brown-waves);
+
+  // Typo
+  --text-on-dark: var(--secondary);
+
+  //Layout
+  --navbar-height: 115px;
+
+  // Buttons
+  --cta-bg-color: var(--verde-cta);
+  --cta-border-color: var(--verde-cta-l-2);
+  --cta-hover-bg-color: var(--verde-cta-l-1);
+
+  // Carousel
+  // Carousel indicator text: indicatori testuali
+  --indicators-text-bg: var(--secondary);
+
+  // Forms
+  --form-border : 1px solid var(--secondary-s-2);   
+
+};
+
+@include media-breakpoint-up(md) {
+  :root {
+    --navbar-height: 125px;
+  }
+}
+

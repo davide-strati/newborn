@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 tutorial by Themesberg</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <!--     <div class="container-fluid top-header">
+      <div class="container d-flex flex-wrap align-items-center justify-content-between py-xxxl-2   px-xxxl-4">
+        <div class="address-block xsmall ">
+          <p class="my-0"><span class="address__text">Mazzoni S.r.l. - Via Prati Vecchi, 5 - 42025 Cavriago (RE) | (+39)
+              0522 575156 - </span><a href="mailto:info@e-mazzoni.it" alt="Write us a mail">info@e-mazzoni.it</a></p>
+        </div>
+        <div class="social-icons-block">
+          <a href="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div> -->
+    <div class="container-fluid justify-content-lg-end align-items-lg-end">
+      <div class="logo__container justify-content-center pt-3 pb-1">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logo/logo.png" alt="Mazzoni's Logo" class="img-fluid">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#catalogues-buttons">Catalogues</a>
+          <a class="nav-link" href="#about-us">About Us</a>
+          <a class="nav-link" href="#pumps">Pumps</a>
+          <a class="nav-link" href="#heaters">Heaters</a>
+          <a class="nav-link" href="#cleaners">Cleaners</a>
+          <a class="nav-link" href="#contatcs">Contacts</a>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+  <!-- Slider principale -->
+  <div class="container-fluid slider__container px-0">
+    <div id="carousel--main-slider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel--main-slider" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel--main-slider" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel--main-slider" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <!-- Pumps -->
+        <div class="carousel-item active">
+          <picture>
+            <source srcset="images/slides/high-pressure-pumps/576.jpg" media="(max-width: 767px)">
+            <source srcset="images/slides/high-pressure-pumps/768.jpg" media="(max-width: 1023px)">
+            <source srcset="images/slides/high-pressure-pumps/1024.jpg" media="(max-width: 1659px)">
+            <source srcset="images/slides/high-pressure-pumps/1660.jpg" media="(max-width: 1899px)">
+            <source srcset="images/slides/high-pressure-pumps/1920.jpg" media="(min-width: 1900px)">
+            <img src="images/slides/high-pressure-pumps/1920.jpg" class="d-block w-100" alt="黄铜头和三个瓷砖柱塞的高压泵">
+          </picture>
+          <div class="carousel-item__text d-flex flex-column flex-wrap justify-content-start justify-content-md-end">
+            <h3>100% 在意大利的工厂制造</h3>
+            <h1 class="display-1 slider__title">技术创新</h1>
+            <div class="slider-subtitle__container">
+              <img src="/images/flag.svg" alt="" class="italian-flag-row img-fluid">
+              <h2 class="display-6">黄铜头和三个瓷砖柱塞的高压泵</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Heaters -->
+        <div class="carousel-item">
+          <picture>
+            <source srcset="images/slides/heaters/576.jpg" media="(max-width: 767px)">
+            <source srcset="images/slides/heaters/768.jpg" media="(max-width: 1023px)">
+            <source srcset="images/slides/heaters/1024.jpg" media="(max-width: 1659px)">
+            <source srcset="images/slides/heaters/1660.jpg" media="(max-width: 1899px)">
+            <source srcset="images/slides/heaters/1920.jpg" media="(min-width: 1900px)">
+            <img src="images/slides/heaters/1920.jpg" class="d-block w-100" alt="柴油和燃气的热水器">
+          </picture>
+          <div class="carousel-item__text d-flex flex-column flex-wrap justify-content-start justify-content-md-end">
+            <h3>100% 在意大利的工厂制造</h3>
+            <h1 class="display-1 slider__title">最大的加热，最小的污染排放 </h1>
+            <div class="slider-subtitle__container">
+              <img src="/images/flag.svg" alt="" class="italian-flag-row img-fluid">
+              <h2 class="display-6">柴油和燃气的热水器</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Cleaners -->
+        <div class="carousel-item">
+          <picture>
+            <source srcset="images/slides/cleaners/576.jpg" media="(max-width: 767px)">
+            <source srcset="images/slides/cleaners/768.jpg" media="(max-width: 1023px)">
+            <source srcset="images/slides/cleaners/1024.jpg" media="(max-width: 1659px)">
+            <source srcset="images/slides/cleaners/1660.jpg" media="(max-width: 1899px)">
+            <source srcset="images/slides/cleaners/1920.jpg" media="(min-width: 1900px)">
+            <img src="images/slides/cleaners/1920.jpg" class="d-block w-100" alt="冷水和热水的高压清洗机">
+          </picture>
+          <div class="carousel-item__text d-flex flex-column flex-wrap justify-content-start justify-content-md-end">
+            <h3>100% 在意大利的工厂制造</h3>
+            <h1 class="display-1 slider__title">专业清洁</h1>
+            <div class="slider-subtitle__container">
+              <img src="/images/flag.svg" alt="" class="italian-flag-row img-fluid">
+              <h2 class="display-6">冷水和热水的高压清洗机</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATALOGUE SECTION -->
+  <section id="catalogues-buttons" class="section--catalogues">
+    <div class="container">
+      <h6 class="text-center">自1969年以来, 传统与创新</h6>
+      <h3 class="text-center section__title">来发现我们的产品</h3>
+      <div class="catalogues__container">
+        <div class="cta__container text-center">
+          <a href="download/mazzoni-industrial.pdf" class="btn btn--cta btn-outline btn--industrial d-block"
+            target="_blank" alt="Download our Industrial Catalogue"><i class="bi bi-cloud-arrow-down"></i>下载我们的工业目录</a>
+          <a href="download/Mazzoni-cleaning.pdf" class="btn btn--cta btn-outline btn--cleaning d-block" target="_blank"
+            alt="Download our Cleaning Catalogue"><i class="bi bi-cloud-arrow-down"></i>下载我们的清洁目录 </a>
+        </div>
+        <div class="industrial__container text-xxxl-right">
+          <h4>INDUSTRIAL</h4>
+          <p>在我们的工业目录中你可以发现:</p>
+          <ul>
+            <li><i class="bi bi-check"></i><a
+                href="https://it1379525355tjqd.trustpass.alibaba.com/zh_CN/productgrouplist-820637225/%E7%94%B5%E6%9C%BA.html?spm=a2700.shop_plgr.98.3"
+                target="_blank" alt="Shop on Alibaba">玛佐尼电机</a>
+              我们电机的生产措施可以确保：能源效率，电气安全，机械功 能，操作安全。 我们的设计是多年生产经验和专业知识的结果。事实上， 与其他制造商不同， 如果在电路中正确安装了热绕组的话，我们保证为电机提供2年的保修。
+            </li>
+            <li><i class="bi bi-check"></i><a
+                href="https://it1379525355tjqd.trustpass.alibaba.com/zh_CN/productgrouplist-819624444/%E9%AB%98%E5%8E%8B%E5%8A%A0%E7%83%AD%E5%99%A8.html?spm=a2700.shop_plgr.98.5"
+                target="_blank" alt="Shop on Alibaba">玛佐尼的柴油和天然气的锅炉。</a>
+              玛佐尼提供各种各样的热水器： 柴油， 液化石油气， 天然气等。我们提供不同的尺寸比如小型， 中型， 大型和马克斯。</li>
+            <li><i class="bi bi-check"></i><a
+                href="https://it1379525355tjqd.trustpass.alibaba.com/zh_CN/productgrouplist-819466239/%E9%AB%98%E5%8E%8B%E6%B3%B5.html?spm=a2700.shop_plgr.98.6"
+                target="_blank" alt="Shop on Alibaba">玛佐尼高压泵。</a> 是为不同机器而设计的：高压清洗机和任何清洗系统，
+              消防系统，防冻液泵系统，反渗透系统，雾化器喷雾器，各类船舶， 都 适合使用 玛佐尼的高压泵.
+            </li>
+          </ul>
+        </div>
+        <div class="cleaning__container">
+          <h4>CLEANING</h4>
+          <p>在我们的清洁目录中你可以发现:</p>
+          <ul>
+            <li><i class="bi bi-check"></i><a
+                href="https://it1379525355tjqd.trustpass.alibaba.com/zh_CN/productgrouplist-813385537/%E9%AB%98%E5%8E%8B%E6%B8%85%E6%B4%97%E6%9C%BA.html?spm=a2700.shop_plgr.98.4"
+                target="_blank">玛祖尼高压清洗机。</a> 易于在农业，建筑，食品，机械和卡车运输等各个领域中使用。灵活性、移动性和紧凑性使玛祖尼高压清洗机成为专业清洁市场上的佼佼者。
+            </li>
+            <li><i class="bi bi-check"></i><a
+                href="https://it1379525355tjqd.trustpass.alibaba.com/zh_CN/productgrouplist-812975147/%E8%92%B8%E6%B1%BD%E6%9C%BA.html?spm=a2700.shop_plgr.98.2"
+                target="_blank">我们的蒸汽机</a> 市场上最有效的蒸汽机。 它利用蒸气的特性以完美的方式清洁和消毒任何种类的表面。</li>
+            <li><i class="bi bi-check"></i><a
+                href="https://it1379525355tjqd.trustpass.alibaba.com/productgrouplist-812832834/HOTBOX.html?spm=a2700.icbuShop.prup15aafb.1.746664b3XdvXar"
+                target="_blank">玛祖尼火箱。</a> 由于它的柴油锅炉可产生热水。 玛佐尼火箱是电动的，并且是柴油加热的。 高性能，低功耗。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about-us" class="section--about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xxl-8 offset-xxl-2 col-xxxl-6 offset-xxxl-3 text-center">
+          <h3 class="text-center section__title">关于我们</h3>
+          <p>玛佐尼是一家成立于1969年的家族企业。我们专业制造高压泵，电动机，柴油和燃气热水器，高压清洗机等。为了能够进入这个充满活力和竞争的行业，玛佐尼公司不仅改善了产品的技术性能，
+            而且在产品灵活性，技术创新和发展方面也有了显著的飞跃。我们的高压泵，电机和高压锅炉的设计旨在确保可靠性和耐用性。 玛佐尼的技术部门不断改进产品，以达到更高的质量和性能要求。
+            玛佐尼位于雷焦艾米利亚省的卡夫里亚戈，该市是全球公认的高压泵 和专业清洗工业组件的生产中心。结果是目前玛佐尼的产品销往世界各地。</p>
+          <img src="images/logo/logo.png" alt="Il logo della Mazzoni" class="logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUMPS SECTION -->
+  <section id="pumps" class="section--pumps section--product">
+    <div class="section__header ">
+      <picture>
+        <source srcset="images/headers/pump/576.jpg" media="(max-width: 767px)">
+        <source srcset="images/headers/pump/768.jpg" media="(max-width: 1023px)">
+        <source srcset="images/headers/pump/1024.jpg" media="(max-width: 1659px)">
+        <source srcset="images/headers/pump/1920.jpg" media="(min-width: 1900px)">
+        <img src="images/headers/pump/1920.jpg" class="d-block w-100">
+      </picture>
+      <div class="container-fluid header__title">
+        <div class="container">
+          <h2 class="display-2 slider__title">高品质<br>高性能</h2>
+          <img src="/images/flag.svg" alt="" class="italian-flag-row img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="section__intro text-center container">
+      <h2 class="section__title">玛佐尼高压泵，意大利风格与激情</h2>
+      <p>玛佐尼泵的超厚陶瓷活塞具有更长的使用寿命，削的活塞杆可减少滑动时的摩擦并提供更好的密封性。主要特点：高强度锻造黄铜泵头，
+        用特殊减摩合金制成的连杆。我们根据用户的多种需求， 破发出范围广泛的泵： 有黄铜头 （PM, MMD, GM, XM 型号），有不锈钢歧管 （MMX- GMX- LM 型号）或者镀镍歧管 （洗车型号-
+        CW）， 用于 85°C 水输入的高温密封 （TPM, MMM, TGM 型号）, 液压马达法兰泵 （HY型号）， 带法兰用于柴油和汽油发动机（EDM型号）。 向右滚动为了发现所有的型号</p>
+    </div>
+    <div class="container products-tabs__container">
+      <!-- PUMPS TABS NAV -->
+      <ul class="nav nav-pills nav--pumps justify-content-center" id="pumpTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm active" id="pm-tab" data-bs-toggle="tab" data-bs-target="#pm" type="button"
+            role="tab" aria-controls="pm" aria-selected="true">PM</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="mmd-tab" data-bs-toggle="tab" data-bs-target="#mmd" role="tab"
+            aria-controls="mmd" aria-selected="false">MMD</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="gm-tab" data-bs-toggle="tab" data-bs-target="#gm" role="tab"
+            aria-controls="gm" aria-selected="false">GM</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="xm-tab" data-bs-toggle="tab" data-bs-target="#xm" role="tab"
+            aria-controls="xm" aria-selected="false">XM</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="lm-tab" data-bs-toggle="tab" data-bs-target="#lm" role="tab"
+            aria-controls="lm" aria-selected="false">LM</button>
+        </li>
+      </ul>
+      <div class="tab-content products-tabs__content" id="pumpTabsContent">
+        <!-- PM SERIES -->
+        <div id="pm" class="tab-pane fade show active" role="tabpanel" aria-labelledby="pm-tab">
+          <div class="product__container product--pump d-flex flex-column flex-lg-row flex-wrap">
+            <!-- Carousel -->
+            <div id="pmCarousel" class="carousel carousel-dark slide carousel--product" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#pmCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#pmCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#pmCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#pmCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#pmCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#pmCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/pumps/pm-carousel/pm.jpg" class="d-block w-100"
+                    alt="PM Series - Variant:PM">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>PM</h5>
+                    <p>Dall'hobby al professionale</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/pm-carousel/pm-cw.jpg" class="d-block w-100"
+                    alt="PM Series - Variant: Car Wash">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>PM-CW</h5>
+                    <p>Pensata proprio per il lavaggio veicoli</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/pm-carousel/pm-cw.jpg" class="d-block w-100"
+                    alt="PM Series - Variant: High temperture">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>TPM</h5>
+                    <p>Progettata per le alte temperature</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/pm-carousel/pm-edm-e3.jpg" class="d-block w-100"
+                    alt="PM Series - Variant: Gasoline engines">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>PM EDM E3</h5>
+                    <p>Con flangia per alberi SAE J1609A E3</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/pm-carousel/pm-edm-e4.jpg" class="d-block w-100"
+                    alt="PM Series - Variant: Gasoline engines">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>PM EDM E4</h5>
+                    <p>Con flangia per alberi SAE J1609A E4</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/pm-carousel/pm-hy.jpg" class="d-block w-100"
+                    alt="PM Series - Variant: Hydraulic motors">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>PM EDM E3</h5>
+                    <p>Con flangia ideale motori idraulici</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#pmCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#pmCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">PM</h3>
+
+              <div class="table-responsive table--features">
+                <table class="table">
+
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">50Hz</th>
+                      <th scope="col">60Hz</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water Flow</span>
+                      </th>
+                      <td>8.50 - 15.00</td>
+                      <td>8.50 - 15.00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/rounds.svg"><span class="th__label">Rounds</span></th>
+                      <td>1450</td>
+                      <td>1750</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                          Pressure</span></th>
+                      <td colspan="2">150 - 200</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-temp.svg"><span class="th__label">Max Water
+                          Temperature</span></th>
+                      <td colspan="2">65° - 85°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- MORE INFO & CTA -->
+              <div class="more-info__container">
+                <h6>More information:</h6>
+                <ul class="mz-list list--links">
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>PM SERIES WEB
+                      PAGE</a></a>
+                  </li>
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>PM SERIES DATA
+                      SHEET</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+              <!-- EO MORE INFO -->
+            </div>
+          </div>
+        </div>
+        <!-- MMD SERIES -->
+        <div id="mmd" class="tab-pane fade">
+          <div class="product__container product--pump d-flex flex-column flex-lg-row flex-wrap" role="tabpanel"
+            aria-labelledby="mmd-tab">
+            <!-- Carousel -->
+            <div id="mmCarousel" class="carousel carousel-dark slide carousel--product" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mmCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mmCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mmCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#mmCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#mmCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#mmCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/pumps/mm-carousel/mmd.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant:MMD">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>MMD</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/mm-carousel/mmd-cw.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: Car Wash">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>MMD-CW</h5>
+                    <p>Pensata proprio per il lavaggio veicoli</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/mm-carousel/mmd-cw.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: High temperture">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>TMM</h5>
+                    <p>Progettata per le alte temperature</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/mm-carousel/mmx.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: Inox Head ">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>MMX</h5>
+                    <p>Con testata inox</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/mm-carousel/mmd-edm.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: Gasoline engines">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>MMD EDM </h5>
+                    <p>Con flangia ideale per motori a benzina</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/mm-carousel/mmd-hy.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: Hydraulic motors">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>MMD-HY</h5>
+                    <p>Con flangia ideale motori idraulici</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#mmCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#mmCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Content -->
+            <div class="product__content">
+              <h3 class="product__title display-3">MMD</h3>
+              <!-- Feature table -->
+              <div class="table-responsive table--features">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">50Hz</th>
+                      <th scope="col">60Hz</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water Flow</span>
+                      </th>
+                      <td>12.00 - 21.00</td>
+                      <td>14.40 - 25.20</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/rounds.svg"><span class="th__label">Rounds</span></th>
+                      <td>1000 - 1450</td>
+                      <td>1200 - 1750</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                          Pressure</span></th>
+                      <td colspan="2">200 - 250</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-temp.svg"><span class="th__label">Max Water
+                          Temperature</span></th>
+                      <td colspan="2">65° - 85°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Cta -->
+              <div class="more-info__container">
+                <h6>More information:</h6>
+                <ul class="mz-list list--links">
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>MMD SERIES WEB
+                      PAGE</a></a>
+                  </li>
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>MMD SERIES DATA
+                      SHEET</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GM SERIES -->
+        <div id="gm" class="tab-pane fade">
+          <div class="product__container product--pump d-flex flex-column flex-lg-row flex-wrap" role="tabpanel"
+            aria-labelledby="gm-tab">
+            <!-- Carousel -->
+            <div id="gmCarousel" class="carousel carousel-dark slide carousel--product" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gmCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mgmarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gmCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#gmCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/pumps/gm-carousel/gm.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant:MMD">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>GM</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/gm-carousel/gm-cw.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: Car Wash">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>GM-CW</h5>
+                    <p>Pensata proprio per il lavaggio veicoli</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/gm-carousel/gm-cw.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: High temperture">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>TGM</h5>
+                    <p>Progettata per le alte temperature</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pumps/gm-carousel/gmx.jpg" class="d-block w-100"
+                    alt="MMD Series - Variant: Inox Head ">
+                  <div class="carousel-caption  d-md-block">
+                    <h5>GMX</h5>
+                    <p>Con testata inox</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#gmCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#gmCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">GM</h3>
+              <div class="table-responsive table--features">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">50Hz</th>
+                      <th scope="col">60Hz</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water Flow</span>
+                      </th>
+                      <td>18.00 - 63.00</td>
+                      <td>21.60 - 75.60</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/rounds.svg"><span class="th__label">Rounds</span></th>
+                      <td>1450</td>
+                      <td>1750</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                          Pressure</span></th>
+                      <td colspan="2">150 - 300</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-temp.svg"><span class="th__label">Max Water
+                          Temperature</span></th>
+                      <td colspan="2">65° - 85°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="more-info__container">
+                <h6>More information:</h6>
+                <ul class="mz-list list--links">
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>GM SERIES WEB
+                      PAGE</a></a>
+                  </li>
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>GM SERIES DATA
+                      SHEET</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- XM SERIES -->
+        <div id="xm" class="tab-pane fade">
+          <div class="product__container product--pump d-flex flex-column flex-lg-row flex-wrap" role="tabpanel"
+            aria-labelledby="xm-tab">
+            <div class="product__image">
+              <picture>
+                <source srcset="images/products/pumps/xm-mobile.jpg" media="(max-width: 1023px)">
+                <source srcset="images/products/pumps/xm-desktop.jpg" media="(min-width: 1024px)">
+                <img src="images/products/pumps/xm-desktop.jpg" class="d-block w-100" alt="XM Series">
+              </picture>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">XM</h3>
+              <!-- XM FEATURES TABLE -->
+              <div class="table-responsive table--features">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">50Hz</th>
+                      <th scope="col">60Hz</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water Flow</span>
+                      </th>
+                      <td>11.00 - 21.00</td>
+                      <td>13.20 - 25.20</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/rounds.svg"><span class="th__label">Rounds</span></th>
+                      <td>1450</td>
+                      <td>1740</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                          Pressure</span></th>
+                      <td colspan="2">500</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-temp.svg"><span class="th__label">Max Water
+                          Temperature</span></th>
+                      <td colspan="2">65°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- XM CTA -->
+              <div class="more-info__container">
+                <h6>More information:</h6>
+                <ul class="mz-list list--links">
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>XM SERIES WEB
+                      PAGE</a></a>
+                  </li>
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>XM SERIES DATA
+                      SHEET</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- LM SERIES -->
+        <div id="lm" class="tab-pane fade">
+          <div class="product__container product--pump d-flex flex-column flex-lg-row flex-wrap" role="tabpanel"
+            aria-labelledby="lm-tab">
+            <div class="product__image">
+              <img src="images/products/pumps/lm-carousel.jpg" class="d-block w-100" alt="XM Series">
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">LM</h3>
+              <!-- XM FEATURES TABLE -->
+              <div class="table-responsive table--features">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water Flow</span>
+                      </th>
+                      <td>18.00 - 120.00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/rounds.svg"><span class="th__label">Rounds</span></th>
+                      <td>1000/1200/1450/1740 </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                          Pressure</span></th>
+                      <td>150 - 500</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/icone/max-temp.svg"><span class="th__label">Max Water
+                          Temperature</span></th>
+                      <td>65°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- XM CTA -->
+              <div class="more-info__container">
+                <h6>More information:</h6>
+                <ul class="mz-list list--links">
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>LM SERIES WEB
+                      PAGE</a></a>
+                  </li>
+                  <li class="mz-list__item">
+                    <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>LM SERIES DATA
+                      SHEET</a></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEATERS SECTION -->
+  <section id="heaters" class="section--heaters section--product">
+    <!-- section header -->
+    <div class="section__header ">
+      <picture>
+        <source srcset="images/headers/heaters/576.jpg" media="(max-width: 767px)">
+        <source srcset="images/headers/heaters/768.jpg" media="(max-width: 1023px)">
+        <source srcset="images/headers/heaters/1024.jpg" media="(max-width: 1659px)">
+        <source srcset="images/headers/heaters/1920.jpg" media="(min-width: 1900px)">
+        <img src="images/headers/heaters/1920.jpg" class="d-block w-100"
+          alt="Mazzoni high pressure and high quality pumps">
+      </picture>
+      <div class="header__title container-fluid">
+        <div class="container">
+          <h2 class="display-2 slider__title">油耗最小化<br>阻力最大化。</h2>
+          <img src="/images/flag.svg" alt="" class="italian-flag-row img-fluid">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section__intro text-center container">      
+      <h2></h2>
+    </div> -->
+    <!-- Start Products Tabs -->
+    <div class="container products-tabs__container">
+      <!-- HEATERS TABS NAV -->
+      <ul class="nav nav-pills nav--pumps justify-content-center" id="heatersTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm active" id="diesel-tab" data-bs-toggle="tab" data-bs-target="#diesel"
+            type="button" role="tab" aria-controls="diesel" aria-selected="true">柴油</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="dieselqe-tab" data-bs-toggle="tab" data-bs-target="#dieselqe"
+            type="button" role="tab" aria-controls="dieselqe" aria-selected="true">柴油+ 电控盒</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="gas-tab" data-bs-toggle="tab" data-bs-target="#gas" role="tab"
+            aria-controls="gas" aria-selected="false">燃气</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="control-tab" data-bs-toggle="tab" data-bs-target="#control" role="tab"
+            aria-controls="control-tab" aria-selected="false">电控盒</button>
+        </li>
+      </ul>
+      <div class="tab-content products-tabs__content" id="heatersTabsContent">
+        <!-- DIESEL HEATERS -->
+        <div id="diesel" class="tab-pane fade show active" role="tabpanel" aria-labelledby="diesel-tab">
+          <p class="product__desc">马佐尼加热器是安全和质量的代名词，优质材料保证、完美尺寸设计在着眼于节能和新的环境和安全法规下，实现最大限度的热量输出。Mazzoni
+            锅炉盘管的加厚和长度允许在水加热方面实现最高效率。主体是不锈钢的和加热器底座由压缩陶瓷纤维制成。此功能将燃烧室与锅炉外部隔离，使其安全可靠。</p>
+          <div class="accordion accordion-flush" id="dieselAccordion">
+            <!-- 15 Litri -->
+            <div class="accordion-item item--15">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  15 liters
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                data-bs-parent="#dieselAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <!-- BOILER IMAGE -->
+                  <div class="product__image">
+                    <picture>
+                      <source srcset="images/products/heaters/15-mobile.jpg" media="(max-width: 1023px)">
+                      <source srcset="images/products/heaters/15-desktop.jpg" media="(min-width: 1200px)">
+                      <img src="images/products/heaters/15-desktop.jpg" class="d-block w-100" alt="Small Heaters">
+                    </picture>
+                  </div>
+                  <!-- BOILER CONTENT -->
+                  <div class="product__content">
+                    <h3 class="product__title display-3">15 LITERS HEATERS</h3>
+
+                    <!-- BOILER TABLES -->
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>15 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">250 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span
+                                class="th__label">performance</span></th>
+                            <td>50.000 Kcal/h > 58.15 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption</span></th>
+                            <td colspan="2">4.73 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>15 LITERS HEATERS
+                            WEB PAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>15 LITERS HEATERS
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 25 Litri -->
+            <div class="accordion-item item--25">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  20 - 25 liters
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#dieselAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <picture>
+                      <source srcset="images/products/heaters/25-mobile.jpg" media="(max-width: 1023px)">
+                      <source srcset="images/products/heaters/25-desktop.jpg" media="(min-width: 1024px)">
+                      <img src="images/products/heaters/25-desktop.jpg" class="d-block w-100" alt="Medium Heaters">
+                    </picture>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">20 - 25 LITERS HEATERS </h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>20 - 25 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">500 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                20Lt</span></th>
+                            <td>80.000 Kcal/h > 93 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                25Lt</span></th>
+                            <td>90.000 Kcal/h > 105 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 20Lt</span></th>
+                            <td colspan="2">7.56 Lt/h</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 25Lt</span></th>
+                            <td colspan="2">8.5 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO & CTA -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>20-25 LITERS
+                            HEATER
+                            WEB PAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>20-25 LITERS HEATER
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                    <!-- EO MORE INFO -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 30 Litri -->
+            <div class="accordion-item item--30">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  30 liters
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#dieselAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <picture>
+                      <source srcset="images/products/heaters/30-mobile.jpg" media="(max-width: 1023px)">
+                      <source srcset="images/products/heaters/30-desktop.jpg" media="(min-width: 1024px)">
+                      <img src="images/products/heaters/30-desktop.jpg" class="d-block w-100" alt="Medium Heaters">
+                    </picture>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">30 LITERS HEATERS </h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>30 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">500 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                20Lt</span></th>
+                            <td>110.000 Kcal/h > 128 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 20Lt</span></th>
+                            <td colspan="2">9.45 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO & CTA -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>30 LITERS HEATERS
+                            WEBPAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>30 LITERS HEATERS
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                    <!-- EO MORE INFO -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 40 Litri -->
+            <div class="accordion-item item--40">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  40 liters
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#dieselAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <img src="images/products/heaters/heaters-40-noqe.jpg" class="d-block w-100"
+                      alt="Medium Heaters without Control Board">
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">40 LITERS HEATERS </h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>30 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">500 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                20Lt</span></th>
+                            <td>135.000 Kcal/h > 128 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 20Lt</span></th>
+                            <td colspan="2">13.23 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO & CTA -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>40 LITERS HEATERS
+                            WEB PAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>40 LITERS HEATERS
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                    <!-- EO MORE INFO -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- DIESEL WITH CB HEATERS -->
+        <div id="dieselqe" class="tab-pane fade show" role="tabpanel" aria-labelledby="dieselqe-tab">
+          <p class="product__desc text-center">保护你的加热器： 所有柴油热水器都可以按装电控盒和安全系统， 以便轻松安全地使用。
+            玛佐尼电控盒保证了对锅炉从温度、电源、到计时器都有完全的控制。</p>
+          <div class="accordion accordion-flush" id="dieselqeAccordion">
+            <!-- 15 Litri -->
+            <div class="accordion-item item--15">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  15 liters
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                data-bs-parent="#dieselqeAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <!-- BOILER IMAGE -->
+                  <div class="product__image">
+                    <img src="images/products/heaters/heaters-25-qe-fake.jpg" class="d-block w-100" alt="Small Heaters">
+                  </div>
+                  <!-- BOILER CONTENT -->
+                  <div class="product__content">
+                    <h3 class="product__title display-3">15 LITERS HEATERS</h3>
+
+                    <!-- BOILER TABLES -->
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>15 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">250 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span
+                                class="th__label">performance</span></th>
+                            <td>50.000 Kcal/h > 58.15 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption</span></th>
+                            <td colspan="2">4.73 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>15 LITERS HEATERS
+                            WEB PAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>15 LITERS HEATERS
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 25 Litri -->
+            <div class="accordion-item item--25">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  20 - 25 liters
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#dieselqeAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <img src="images/products/heaters/heaters-25-qe-fake.jpg" class="d-block w-100"
+                      alt="Medium Heaters with Control Board">
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">20 - 25 LITERS HEATERS </h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>20 - 25 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">500 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                20Lt</span></th>
+                            <td>80.000 Kcal/h > 93 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                25Lt</span></th>
+                            <td>90.000 Kcal/h > 105 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 20Lt</span></th>
+                            <td colspan="2">7.56 Lt/h</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 25Lt</span></th>
+                            <td colspan="2">8.5 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO & CTA -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>20-25 LITERS
+                            HEATER
+                            WEB PAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>20-25 LITERS HEATER
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                    <!-- EO MORE INFO -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 30 Litri -->
+            <div class="accordion-item item--30">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  30 liters
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#dieselqeAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <img src="images/products/heaters/heaters-30-qe-fake.jpg" class="d-block w-100"
+                      alt="Medium Heaters with Control Board">
+
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">30 LITERS HEATERS </h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>30 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">500 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                20Lt</span></th>
+                            <td>110.000 Kcal/h > 128 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 20Lt</span></th>
+                            <td colspan="2">9.45 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO & CTA -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>30 LITERS HEATERS
+                            WEBPAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>30 LITERS HEATERS
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                    <!-- EO MORE INFO -->
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 40 Litri -->
+            <div class="accordion-item item--40">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  40 liters
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#dieselqeAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <picture>
+                      <source srcset="images/products/heaters/40-mobile.jpg" media="(max-width: 1023px)">
+                      <source srcset="images/products/heaters/40-desktop.jpg" media="(min-width: 1024px)">
+                      <img src="images/products/heaters/40-desktop.jpg" class="d-block w-100" alt="Medium Heaters">
+                    </picture>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">40 LITERS HEATERS </h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>30 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">500 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                20Lt</span></th>
+                            <td>135.000 Kcal/h > 128 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption - 20Lt</span></th>
+                            <td colspan="2">13.23 Lt/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- MORE INFO & CTA -->
+                    <div class="more-info__container">
+                      <h6>More information:</h6>
+                      <ul class="mz-list list--links">
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-box-arrow-up-right"></i>40 LITERS HEATERS
+                            WEB PAGE</a></a>
+                        </li>
+                        <li class="mz-list__item">
+                          <a href="" class="btn btn--textual"><i class="bi bi-cloud-arrow-down"></i>40 LITERS HEATERS
+                            DATA
+                            SHEET</a></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                    <!-- EO MORE INFO -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- GAS HEATERS -->
+        <div id="gas" class="tab-pane fade" role="tabpanel" aria-labelledby="gas-tab">
+          <p class="product__desc text-center">燃气加热器有最小和最大气体压力控制系统， 以确保安全运行。 它们被设计成符合环境要求下的最佳性能状态。燃气锅炉配有电控盒。</p>
+
+          <div class="accordion accordion-flush" id="gasAccordion">
+            <!-- GPL -->
+            <div class="accordion-item item--15">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  液化石油气供应
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+                data-bs-parent="#gasAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <picture>
+                      <source srcset="images/products/heaters/gas-mobile.jpg" media="(max-width: 1023px)">
+                      <source srcset="images/products/heaters/gas-desktop.jpg" media="(min-width: 1200px)">
+                      <img src="images/products/heaters/gas-desktop.jpg" class="d-block w-100" alt="Small Heaters">
+                    </picture>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">液化石油气供应</h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>15 - 21 - 30 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">250 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                15 Lt</span></th>
+                            <td>55.000 Kcal/h > 103 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                21 Lt</span></th>
+                            <td>96.000 Kcal/h > 112 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                30 Lt</span></th>
+                            <td>117.000 Kcal/h > 134 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption</span></th>
+                            <td colspan="2">3.5 - 3.9 - 4.6 NM<sup>3</sup>/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- METHANE Litri -->
+            <div class="accordion-item item--25">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  天然气供应
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#gasAccordion">
+                <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+                  <div class="product__image">
+                    <picture>
+                      <source srcset="images/products/heaters/gas-mobile.jpg" media="(max-width: 1023px)">
+                      <source srcset="images/products/heaters/gas-desktop.jpg" media="(min-width: 1024px)">
+                      <img src="images/products/heaters/gas-desktop.jpg" class="d-block w-100" alt="Medium Heaters">
+                    </picture>
+                  </div>
+                  <div class="product__content">
+                    <h3 class="product__title display-3">天然气供应</h3>
+                    <div class="table-responsive table--features">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><img src="images/icone/flow-rate.svg"><span class="th__label">Water
+                                Flow</span></th>
+                            <td>15 - 21 - 30 Lt/min</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/max-pressure.svg"><span class="th__label">Max
+                                Pressure</span></th>
+                            <td colspan="2">250 Bar</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                15 Lt</span></th>
+                            <td>50.000 Kcal/h > 102 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                21 Lt</span></th>
+                            <td>92.000 Kcal/h > 107 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/rendimento.svg"><span class="th__label">Performance
+                                30 Lt</span></th>
+                            <td>115.000 Kcal/h > 124 Kw</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><img src="images/icone/consumi.svg"><span class="th__label">Diesel
+                                Consumption</span></th>
+                            <td colspan="2">10.5 - 11 - 14 NM<sup>3</sup>/h</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="contact-btn__container text-center">
+                      <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                          class="bi bi-envelope"></i>了解更多</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CONTROL BOARD -->
+        <div id="control" class="tab-pane fade" role="tabpanel" aria-labelledby="control-tab">
+          <div class="product__container product--heaters d-flex flex-column flex-md-row flex-wrap">
+            <div class="product__image">
+              <picture>
+                <source srcset="images/products/heaters/control-board-mobile.jpg" media="(max-width: 1023px)">
+                <source srcset="images/products/heaters/control-board-desktop.jpg" media="(min-width: 1200px)">
+                <img src="images/products/heaters/control-board-desktop.jpg" class="d-block w-100" alt="Control Board">
+              </picture>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">CONTROL BOARD</h3>
+              <p class="product__desc">照明面板可让您了解当前状态。其直观的设计使其易于使用。 由意大利大师级工匠仅使用高科技组件制造。</p>
+              <h5>电控盒特性</h5>
+              <ul class="features-list list-with-icons">
+                <li><span class="list__icon icon--flame"></span><span class="list__text">火焰控制器</span></li>
+                <li><span class="list__icon icon--pressure"></span><span class="list__text">压力控制开关</span></li>
+                <li><span class="list__icon icon--flow"></span><span class="list__text">流量控制开关</span></li>
+                <li><span class="list__icon icon--hours"></span><span class="list__text">计时器</span></li>
+                <li><span class="list__icon icon--fuel-low"></span><span class="list__text">低油位警告</span></li>
+                <li><span class="list__icon icon--thermostat"></span><span class="list__text">恒温控制</span></li>
+              </ul>
+              <div class="mt-5 more-info__container">
+                <a href="../download/mazzoni-heaters-with-control-board.pdf" class="btn btn--cta btn--dwonload"
+                  alt="Dwonload our info sheet about heater with control board" target="_blank"><i
+                    class="bi bi-download"></i> DOWNLOAD THE INFO SHEET</a>
+              </div>
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLEANERS SECTION -->
+  <section id="cleaners" class="section--cleaners section--product">
+    <div class="section__header ">
+      <picture>
+        <source srcset="images/headers/idro/576.jpg" media="(max-width: 767px)">
+        <source srcset="images/headers/idro/768.jpg" media="(max-width: 1023px)">
+        <source srcset="images/headers/idro/1024.jpg" media="(max-width: 1659px)">
+        <source srcset="images/headers/idro/1920.jpg" media="(min-width: 1900px)">
+        <img src="images/headers/idro/1920.jpg" class="d-block w-100"
+          alt="Mazzoni high pressure and high quality pumps">
+      </picture>
+      <div class="container-fluid header__title">
+        <div class="container">
+          <h2 class="display-2 slider__title">高压清洗机</h2>
+          <img src="/images/flag.svg" alt="" class="italian-flag-row img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="section__intro text-center container">
+      <h2>专业的力量</h2>
+    </div>
+    <!-- CLEANERS TABS -->
+    <div class="container products-tabs__container">
+      <!-- CLEANERS TABS NAV -->
+      <ul class="nav nav-pills nav--cleaners justify-content-center" id="cleanersTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm active" id="cold-tab" data-bs-toggle="tab" data-bs-target="#cold"
+            type="button" role="tab" aria-controls="cold" aria-selected="true">冷水清洗机</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="hot-tab" data-bs-toggle="tab" data-bs-target="#hot" role="tab"
+            aria-controls="hot" aria-selected="false">热水清洗机</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="steam-tab" data-bs-toggle="tab" data-bs-target="#steam" role="tab"
+            aria-controls="steam" aria-selected="false">蒸汽机</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link shadow-sm" id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire" role="tab"
+            aria-controls="fire" aria-selected="false">火箱</button>
+        </li>
+      </ul>
+      <div class="tab-content products-tabs__content" id="cleanersTabsContent">
+        <!-- COLD CLEANERS -->
+        <div id="cold" class="tab-pane fade show active" role="tabpanel" aria-labelledby="cold-tab">
+          <div class="product__container product--cleaners d-flex flex-column flex-md-row flex-wrap">
+            <div class="product__image">
+              <picture>
+                <source srcset="images/products/cleaners/cold-mobile.jpg" media="(max-width: 1023px)">
+                <source srcset="images/products/cleaners/cold-desktop.jpg" media="(min-width: 1024px)">
+                <img src="images/products/cleaners/cold-desktop.jpg" class="d-block w-100"
+                  alt="Cold water high pressure cleaners">
+              </picture>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">COLD WATER CLEANERS</h3>
+              <p class="product__desc">强大的高压冷水清洁器可在几秒钟内清除污垢，确保对任何表面进行快速、彻底的清洁。</p>
+              <!-- XM FEATURES TABLE -->
+              <div class="table-responsive">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">TYPE</th>
+                      <th scope="col">WATER FLOW<br>Lt/min</th>
+                      <th scope="col">MAX PRESSURE<br>Bar</th>
+                      <th scope="col">MAX WATER TEMPERATURE<br>° Celsius</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">HOBBY</th>
+                      <td>7</td>
+                      <td>120</td>
+                      <td>45°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">SEMI-PRO</th>
+                      <td>10</td>
+                      <td>140</td>
+                      <td>45°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">PROFESSIONAL</th>
+                      <td>10 - 21</td>
+                      <td>150 - 200</td>
+                      <td>45°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">HEAVY DUTY</th>
+                      <td>21 - 43</td>
+                      <td>200 - 500</td>
+                      <td>45°</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- CONTACT US -->
+              <div class="contact-btn__container text-center">
+                <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                    class="bi bi-envelope"></i>了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- HOT CLEANERS -->
+        <div id="hot" class="tab-pane fade">
+          <div class="product__container product--cleaners d-flex flex-column flex-md-row flex-wrap" role="tabpanel"
+            aria-labelledby="hot-tab">
+            <div class="product__image">
+              <picture>
+                <source srcset="images/products/cleaners/hot-mobile.jpg" media="(max-width: 1023px)">
+                <source srcset="images/products/cleaners/hot-desktop.jpg" media="(min-width: 1024px)">
+                <img src="images/products/cleaners/hot-desktop.jpg" class="d-block w-100"
+                  alt="Hot water high pressure cleaners">
+              </picture>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">HOT WATER CLEANERS</h3>
+              <p class="product__desc">玛佐尼热水高压清洗机可减少工作时间并减少执行有效清洁所需的洗涤剂用量。</p>
+              <!-- XM FEATURES TABLE -->
+              <div class="table-responsive-sm table--features">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">TYPE</th>
+                      <th scope="col">WATER FLOW<br>Lt/min</th>
+                      <th scope="col">MAX PRESSURE<br>Bar</th>
+                      <th scope="col">MAX WATER TEMPERATURE<br>° Celsius</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">HOBBY</th>
+                      <td>7</td>
+                      <td>120</td>
+                      <td>90°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">SEMI-PRO</th>
+                      <td>10</td>
+                      <td>140</td>
+                      <td>90°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">PROFESSIONAL</th>
+                      <td>10 - 21</td>
+                      <td>140 - 200</td>
+                      <td>150°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">INDUSTRIAL</th>
+                      <td>11 - 32</td>
+                      <td>120 - 400</td>
+                      <td>150°</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">HEAVY DUTY</th>
+                      <td>21 - 43</td>
+                      <td>200 - 500</td>
+                      <td>45°</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- CONTACT US -->
+                <div class="contact-btn__container text-center">
+                  <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                      class="bi bi-envelope"></i>了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- STEAM CLEANERS -->
+        <div id="steam" class="tab-pane fade">
+          <div class="product__container product--cleaners d-flex flex-column flex-md-row flex-wrap" role="tabpanel"
+            aria-labelledby="steam-tab">
+            <div class="product__image">
+              <picture>
+                <source srcset="images/products/cleaners/steam-mobile.jpg" media="(max-width: 1023px)">
+                <source srcset="images/products/cleaners/steam-desktop.jpg" media="(min-width: 1200px)">
+                <img src="images/products/cleaners/steam-desktop.jpg" class="d-block w-100" alt="Steam cleaners">
+              </picture>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">蒸汽机</h3>
+              <p class="product__desc">您是否想知道如何从地板上去除那些讨厌的口香糖，或者如何消除墙上的涂鸦？不管什么问题，玛佐尼都有答案.
+                玛祖尼蒸汽机可以用两支喷枪结合使用，利用蒸汽的天然优势对物品的表面进行清洁和消毒。适用于蒸汽灭菌（无水）或用于清洁不同种类的表面和材料（用水和蒸汽）。</p>
+              <!-- XM FEATURES TABLE -->
+              <div class="table-responsive table--features">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">STEAM PRESSURE<br>Lt/min</th>
+                      <th scope="col">MAX WATER TEMPERATURE<br>° Celsius</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"></th>
+                      <td>9.50 - 10.50</td>
+                      <td>150°</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- CONTACT US -->
+                <div class="contact-btn__container text-center">
+                  <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                      class="bi bi-envelope"></i>了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIREBOX CLEANERS -->
+        <div id="fire" class="tab-pane fade">
+          <div class="product__container product--cleaners d-flex flex-column flex-md-row flex-wrap" role="tabpanel"
+            aria-labelledby="fire-tab">
+            <div class="product__image">
+              <picture>
+                <source srcset="images/products/cleaners/fire-mobile.jpg" media="(max-width: 1023px)">
+                <source srcset="images/products/cleaners/fire-desktop.jpg" media="(min-width: 1200px)">
+                <img src="images/products/cleaners/fire-desktop.jpg" class="d-block w-100" alt="Firebox heater">
+              </picture>
+            </div>
+            <div class="product__content">
+              <h3 class="product__title display-3">火箱</h3>
+              <p class="product__desc">玛祖尼加热器可将冷水加热至 150°C，从而实现最高效的清洁。广泛应用于农业、畜牧业和工业领域。</p>
+              <!-- XM FEATURES TABLE -->
+              <div class="table-responsive table--features">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th scope="col">TYPE</th>
+                      <th scope="col">WATER FLOW<br>Lt/min</th>
+                      <th scope="col">MAX PRESSURE<br>Bar</th>
+                      <th scope="col">MAX WATER TEMPERATURE<br>° Celsius</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"></th>
+                      <td>15 - 25</td>
+                      <td>250 - 500</td>
+                      <td>150°</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <!-- CONTACT US -->
+                <div class="contact-btn__container text-center">
+                  <a href="mailto:chinadesk@e-mazzoni.it" class="btn btn--cta btn-outline btn--contact"><i
+                      class="bi bi-envelope"></i>了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- CONTACTS SECTION -->
+  <section id="contacts" class="section--contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 contacts__container">
+          <!-- Form -->
+          <div class="form__container col-12 col-lg-6">
+            <div class="contact-section__title d-flex align-items-center text-center">
+              <div class="title__line"></div>
+              <div class="title__text">
+                <h4>关注我们!</h4>
+              </div>
+              <div class="title__line"></div>
+            </div>
+            <form id="contact-form" method="post" action="" role="form">
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_name" class="form-label">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control input--name"
+                        placeholder="Please enter your firstname *" required="required"
+                        data-error="Firstname is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_firm" class="form-label">Firm</label>
+                      <input id="form_firm" type="text" name="firm" class="form-control input--firm"
+                        placeholder="Your Organization">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_email" class="form-label">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control input--email"
+                        placeholder="Please enter your email *" required="required"
+                        data-error="Valid email is required.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message" class="form-label">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control text--message" placeholder="Message for me *"
+                        rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 btn__container">
+                    <input type="submit" class="btn btn--cta btn-outline btn--contact" value="Invia messaggio">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="msgSubmit" class="h3 text-center d-none">Message Submitted!</div>
+            </form>
+          </div>
+          <div class="contacts__wrapper d-flex flex-wrap col-12 col-lg-6 text-center">
+            <!-- We chat -->
+            <div class="wechat__container">
+              <div class="contact-section__title d-flex align-items-center text-center">
+                <div class="title__line"></div>
+                <div class="title__text">
+                  <h4>关注我们!</h4>
+                </div>
+                <div class="title__line"></div>
+              </div>
+              <div class="wechat__content d-flex flex-row flex-wrap align-items-center">
+                <div class="wechat-logo">
+                  <img src="images/wechat-logo.png" alt="" class="img-fluid">
+                </div>                
+                <div class="wechat-qr">
+                  <img src="images/mazzoni-qr.jpg" alt="Contact us on wechat" class="img-fluid">
+                </div>
+                <div class="wechat__contacts">
+                  <h6>WECHAT CHINADESK</h6>
+                </div>
+              </div>
+            </div>
+            <!--Alibaba -->
+            <div class="alibaba__container">
+              <div class="contact-section__title d-flex align-items-center text-center">
+                <div class="title__line"></div>
+                <div class="title__text">
+                  <h4>在阿里巴巴上找到我们</h4>
+                </div>
+                <div class="title__line"></div>
+              </div>
+              <div class="alibaba__content d-flex flex-row flex-wrap align-items-center">
+                <div class="alibaba-logo">
+                  <a href="https://www.mazzoni.com.cn" alt="Find us on Alibaba">
+                    <img src="images/alibaba-logo-elements.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="alibaba-qr">
+                  <img src="images/mazzoni-qr.jpg" alt="Find us on Alibaba" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <!--Contact us -->
+            <div class="contact__container">
+              <div class="contact-section__title d-flex align-items-center text-center">
+                <div class="title__line"></div>
+                <div class="title__text">
+                  <h4>电话</h4>
+                </div>
+                <div class="title__line"></div>
+              </div>
+              <div class="contact__content d-flex flex-row flex-wrap align-items-center">
+                <div class="mazzoni-logo">
+                  <img src="images/logo/logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="mazzoni__contacts">
+                  <a href="tel:+393516771750"><i class="bi bi-telephone"></i>(+39) 351 677 1750</a>
+                  <a href="mailto:chinadesk@e-mazzoni.it"><i class="bi bi-envelope"></i>chinadesk@e-mazzoni.it</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MAILCHIMP SECTION -->
+  <section id="mailchimp" class="section--mailchimp p-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-6 mailchimp__container">
+          <!-- Begin Mailchimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+            #mc_embed_signup {
+              background: #fff;
+              clear: left;
+              font: 14px Helvetica, Arial, sans-serif;
+            }
+
+            /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          <div id="mc_embed_signup">
+            <img src="images/icone/newsletter-icon.svg" alt="" class="img-fluid">
+            <form
+              action="https://facebook.us16.list-manage.com/subscribe/post?u=42d62e5e0723bd90c35838660&amp;id=40672c3d52"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                  <label for="mce-LNAME">Last Name </label>
+                  <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                  </label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                    name="b_42d62e5e0723bd90c35838660_40672c3d52" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                    class="button"></div>
+              </div>
+            </form>
+          </div>
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+          <script
+            type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+          <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-xxl-6 text-center mazzoni-logo__container">
+          <img src="images/logo/logo.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-xxl-4 address__container">
+          <div class="address__content">
+            <h5>Mazzoni S.r.l.</h5>
+            <p>Via Prati Vecchi, 5<br>
+              42025 Cavriago (RE) - Italy</p>
+            <div class="mazzoni__contacts">
+              <a href="tel:+390522575156"><i class="bi bi-telephone"></i>(+39) 0522 57.51.56</a><br>
+              <a href="tel:+390522577793"><i class="bi bi-telephone"></i>(+39) 0522 57.77.93</a><br>
+              <a href="mailto:chinadesk@e-mazzoni.it"><i class="bi bi-envelope"></i>chinadesk@e-mazzoni.it</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-2 text-center mazzoni-qr__container">
+          <img src="images/mazzoni-qr.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" tabindex="-1" id="registerAccountModal">
+    <div class="modal-dialog">
+      <form action="#" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Register account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm password</label>
+            <input type="password" class="form-control" id="confirmPassword" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>

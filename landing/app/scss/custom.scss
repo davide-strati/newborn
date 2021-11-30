@@ -1,0 +1,390 @@
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "utilities";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Required
+// Custom bootstrap variable overrides
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "variables";
+@import "components";
+
+/* -------------------- SPAZI --------------------*/
+
+html {
+    // Smooth Scroll
+    scroll-behavior: smooth;
+}
+
+:root,
+body {
+    --space-unit: 12px;
+    --space-xxxxs: calc(0.125 * var(--space-unit));
+    --space-xxxs: calc(0.25 * var(--space-unit));
+    --space-xxs: calc(0.375 * var(--space-unit));
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(0.75 * var(--space-unit));
+    --space-md: calc(1.25 * var(--space-unit));
+    --space-lg: calc(2 * var(--space-unit));
+    --space-xl: calc(3.25 * var(--space-unit));
+    --space-xxl: calc(5.25 * var(--space-unit));
+    --space-xxxl: calc(8.5 * var(--space-unit));
+    --space-xxxxl: calc(13.75 * var(--space-unit));
+    --component-padding: var(--space-sm);
+    // Spaziature sezione
+    --padding-top--section: 2em;
+    --padding-bottom--section: 2em;
+    // Typo
+    --body-font: "Quicksand", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+        "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+// optional - edit space unit and padding of all components at a specific breakpoint
+@supports (--css: variables) {
+    @include media-breakpoint-up(md) {
+        body {
+            --space-unit: 1.25em;
+        }
+    }
+    @include media-breakpoint-up(xxxl) {
+        body {
+            --padding-top--section: 4em;
+            --padding-bottom--section: 4em;
+        }
+    }
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+
+/* GENERAL STYLES
+-------------------------------------------------- */
+
+.palette__container {
+    .col-1 {min-height: 100px;}
+    .color-primary-1 {
+        background-color: $primary-100;
+    }
+    .color-primary-2 {
+        background-color: $primary-200;
+    }
+    .color-primary-3 {
+        background-color: $primary-300;
+    }
+    .color-primary-4 {
+        background-color: $primary-400;
+    }
+    .color-primary-5 {
+        background-color: $primary-500;
+    }
+    .color-primary-6 {
+        background-color: $primary-600;
+    }
+    .color-primary-7 {
+        background-color: $primary-700;
+    }
+    .color-primary-8 {
+        background-color: $primary-800;
+    }
+    .color-primary-9 {
+        background-color: $primary-900;
+    }
+    .color-primary-10 {
+        background-color: $primary;
+    }
+    /* Gray */
+    .color-gray-1 {
+        background-color: $gray-100;
+    }
+    .color-gray-2 {
+        background-color: $gray-200;
+    }
+    .color-gray-3 {
+        background-color: $gray-300;
+    }
+    .color-gray-4 {
+        background-color: $gray-400;
+    }
+    .color-gray-5 {
+        background-color: $gray-500;
+    }
+    .color-gray-6 {
+        background-color: $gray-600;
+    }
+    .color-gray-7 {
+        background-color: $gray-700;
+    }
+    .color-gray-8 {
+        background-color: $gray-800;
+    }
+    .color-gray-9 {
+        background-color: $gray-900;
+    }
+    .color-gray-10 {
+        background-color: $gray;
+    }
+}
+
+
+
+//Typo
+body {
+    color: $body-text !important;
+    font-family: var(--body-font) !important;
+}
+h1 {
+    letter-spacing: 0.150em;
+    font-weight: 300;
+    color: $primary-800;
+}
+h2 {
+    color: $primary-600;
+}
+h3 {
+    font-weight: $font-weight-light;
+    letter-spacing: 0.105em;
+}
+
+// Dark background mods
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+strong {
+    .bg--dark & {
+        color: var(--text-on-dark);
+    }
+}
+
+/* CUSTOM STYLES
+-------------------------------------------------- */
+//Smooth Scroll
+html {
+    scroll-behavior: smooth;
+}
+/* Padding below the footer and lighter body text */
+
+/* NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+    background-color: $sfondo-header;
+    height: var(--navbar-height);
+}
+
+/*-------------------------------------------------- */
+/* End of Navbar */
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+
+.carousel-caption {
+    bottom: inherit;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*-------------------------------------------------- */
+/* End of CAROUSEL */
+
+/* SERVIZI
+-------------------------------------------------- */
+
+.section-services {
+   .img--service {
+       display: block;
+       margin: 0 auto;
+       width: 120px;
+   } 
+}
+
+
+/*-------------------------------------------------- */
+/* End of SERVIZI */
+
+/* INTRO
+-------------------------------------------------- */
+
+.section-intro { 
+    position: relative;   
+    &:before {
+        content:'';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $sfondo-intro;
+        z-index: -1;
+    }
+
+ }
+ 
+ 
+ /*-------------------------------------------------- */
+ /* End of INTRO */
+
+/* PHOTO GRID
+-------------------------------------------------- */
+.photo-grid {
+    background: var(--sfondo-portfolio);
+    background-blend-mode: multiply, overlay, normal;
+    .grid-item {
+        -webkit-filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4)) drop-shadow(9px 9px 18px rgba(0, 0, 0, 0.1));
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4)) drop-shadow(9px 9px 18px rgba(0, 0, 0, 0.1));
+    }
+}
+.grid__container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .big {
+        grid-column-start: auto;
+        grid-column-end: span 2;
+        grid-row-start: auto;
+        grid-row-end: span 2;
+    }
+
+}
+
+
+
+/*-------------------------------------------------- */
+/* End of PHOTO GRID */
+
+/* CONTACT FORM
+-------------------------------------------------- */
+.section-contatti {
+    background: none;
+    box-sizing: border-box;
+    box-shadow: 0px 100px 80px rgba(226, 196, 159, 0.1), 0px 41.7776px 33.4221px rgba(216, 102, 41, 0.02),
+        0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+        0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    border-radius: 9px;
+    padding-bottom: 160px;
+    padding-top: 50px;
+}
+
+.bb-form {
+    .container {
+        background-color: #fff;
+        border: none;
+        padding: 32px;
+    }
+
+    line-height: 3em;
+
+    input:not([type="checkbox"]),
+    textarea,
+    select {
+        width: 100%;
+        border-color: var(--secondary-s-2);
+    }
+
+    // Input semplici, placeholder + linea inferiore
+    .input--base {
+        border-width: 0 0 1px 0;
+    }
+
+    // textarea
+    .item--textarea,
+    .form-textarea {
+        height: 100%;
+    }
+    .form-textarea {
+        display: block;
+        margin-bottom: 0;
+        padding: 16px;
+    }
+    // Select 
+    .form-select {
+        height: 50px;
+    }
+    // Checkboxes
+    .form-check-input[type="checkbox"] {
+        border-radius: 0.25em;
+        border-color: var(--secondary-s-2);
+        height: 1.25em;
+        padding-top: 0;
+        vertical-align: baseline;
+        width: 1.25em;
+    }
+}
+
+/*  >>>  CAROUSEL BRAND ----------------------- */
+
+/*-------------------------------------------------- */
+/* End of PHOTO GRID */
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+/* rtl:end:ignore */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+}
+
+@media (min-width: 62em) {
+}
+
+@include media-breakpoint-up(md) {
+
+    .section-contatti {
+        background: var(--sfondo-contatti);
+        .container {
+            background-color: #fff;
+            border: var(--form-border);
+            border-radius: 10px;
+            box-shadow: 0px 100px 80px rgba(226, 196, 159, 0.1), 0px 41.7776px 33.4221px rgba(216, 102, 41, 0.02),
+                0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035),
+                0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+            padding: 64px;
+        }
+    }
+
+    // Nav Links & Menu
+    .navbar .nav-link {
+        font-size: 16px;
+        line-height: 1em;
+    }
+
+    #mailchimp {
+        .mailchimp__container {
+            padding: 4em 6em !important;
+        }
+    }
+}
