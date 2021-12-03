@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
+<?php
+    require 'inc/functions.php';
+?>
 
 <body>
     <header>
@@ -40,17 +43,18 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <picture>
-                            <source srcset="images/photo/slider/main/gravidanza/sm-gravidanza.jpg" media="(max-width: 570px)"
-                                class="d-block w-100">
-                            <source srcset="images/photo/slider/main/gravidanza/md-gravidanza.jpg" media="(max-width: 768px)"
-                                class="d-block w-100">
+                            <source srcset="images/photo/slider/main/gravidanza/sm-gravidanza.jpg"
+                                media="(max-width: 570px)" class="d-block w-100">
+                            <source srcset="images/photo/slider/main/gravidanza/md-gravidanza.jpg"
+                                media="(max-width: 768px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/gravidanza/lg-gravidanza.jpg"
                                 media="(max-width: 1023px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/gravidanza/xxl-gravidanza.jpg"
                                 media="(max-width: 1439px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/gravidanza/xxxxl-gravidanza.jpg"
                                 media="(min-width: 1440px)" class="d-block w-100">
-                            <img src="images/photo/slider/main/gravidanza/xxxxl-gravidanza.jpg" alt="" class="d-block w-100">
+                            <img src="images/photo/slider/main/gravidanza/xxxxl-gravidanza.jpg" alt=""
+                                class="d-block w-100">
                         </picture>
                     </div>
                     <div class="carousel-item">
@@ -61,8 +65,8 @@
                                 class="d-block w-100">
                             <source srcset="images/photo/slider/main/neonati/lg-newborn.jpg" media="(max-width: 1023px)"
                                 class="d-block w-100">
-                            <source srcset="images/photo/slider/main/neonati/xxl-newborn.jpg" media="(max-width: 1439px)"
-                                class="d-block w-100">
+                            <source srcset="images/photo/slider/main/neonati/xxl-newborn.jpg"
+                                media="(max-width: 1439px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/neonati/xxxxl-newborn.jpg"
                                 media="(min-width: 1440px)" class="d-block w-100">
                             <img src="images/photo/slider/main/neonati/xxxxl-newborn.jpg" alt="" class="d-block w-100">
@@ -78,8 +82,8 @@
                                 class="d-block w-100">
                             <source srcset="images/photo/slider/main/bambini/xxl-kids.jpg" media="(max-width: 1439px)"
                                 class="d-block w-100">
-                            <source srcset="images/photo/slider/main/bambini/xxxxl-kids.jpg"
-                                media="(min-width: 1440px)" class="d-block w-100">
+                            <source srcset="images/photo/slider/main/bambini/xxxxl-kids.jpg" media="(min-width: 1440px)"
+                                class="d-block w-100">
                             <img src="images/photo/slider/main/bambini/slide.jpg" alt="" class="d-block w-100">
                         </picture>
                     </div>
@@ -96,33 +100,41 @@
         </section>
         <!-- SECTION SERVICES -->
         <section class="section-services">
-            <div class="container py-5">
-                <div class="row">
+            <div class="container-fluid p-5">
+                <div class="row section-title pt-3 pb-5">
                     <h1 class="text-center">SERVIZI FOTOGRAFICI</h1>
                 </div>
                 <div class="row text-center">
                     <div class="col-lg-4">
-                        <img src="images/G.png" class="py-4 img--service" alt="">
+                        <img src="images/caps/cap-g.svg" class="py-4 img--service" alt="">
                         <h2>GRAVIDANZA</h2>
-                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
-                            ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                            Praesent commodo cursus magna.</p>
+                        <p>La gravidanza è un periodo unico e meraviglioso nella vita di una donna. Immortalare la
+                            bellezza di quei momenti, rendendo protagonista la dolcezza delle espressioni ricche di una
+                            luce unica, e le forme sinuose del corpo di una donna in attesa di una nuova vita, è
+                            qualcosa di davvero magico.<br>La sessione di scatti è consigliabile <strong>tra la
+                                ventiseiesima e la
+                                trentaseiesima settimana</strong> di gravidanza.</p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img src="images/N.png" class="py-4 img--service" alt="">
+                        <img src="images/caps/cap-n.svg" class="py-4 img--service" alt="">
                         <h2>NEONATI</h2>
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
-                            elit.
-                            Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-                            tortor mauris condimentum nibh.</p>
+                        <p>Quando nasce una nuova vita si è travolti da un vortice di emozioni. Catturare immagini dei
+                            primi giorni di vita significa dare vita a ricordi indelebili e ricchi di gioia, che
+                            resteranno per sempre nelle vostre vite. Gli scatti si faranno <strong>dal 5° al 14° giorno
+                                di vita del neonato</strong>, rispettando i suoi tempi,
+                            all'interno di uno spazio confortevole e pulito.<br>Chiama ora per prenotare la tua
+                            sessione, o
+                            fai un regalo speciale a qualcuno che ami!</p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4">
-                        <img src="images/K.png" class="py-4 img--service" alt="">
+                        <img src="images/caps/cap-b.svg" class="py-4 img--service" alt="">
                         <h2>BAMBINI</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum
-                            id
-                            ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                            condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <p>I vostri bambini crescono così in fretta, ed è così bello immortalare questi loro
+                            cambiamenti, creare ricordi che saranno una ricchezza per tutta la famiglia.<br>Per
+                            <strong>festeggiare
+                                un compleanno, o in qualsiasi momento della loro crescita</strong>, si possono fare dei
+                            bei ritratti,
+                            giocando con loro, per catturare lo stupore e la meraviglia nei loro sorrisi.</p>
                     </div><!-- /.col-lg-4 -->
                 </div>
             </div>
@@ -167,67 +179,54 @@
                             <a href="#sectionContatti" class="btn btn--cta text-center">CONTATTAMI</a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-5">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-                            width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"
-                            aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="transparent" />
-                        </svg>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- PHOTO GRID -->
+        <!-- PHOTO TABS -->
         <section id="photo-grid" class="photo-grid py-5 bg--dark">
-            <div class="container">
-                <h3 class="fs-1 text-center py-5">PORTFOLIO</h3>
-                <!-- PILLS NAV -->
-                <ul class="nav nav-tabs" id="gridTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="gravidanza-tab" data-bs-toggle="tab"
-                            data-bs-target="#gravidanza" type="button" role="tab" aria-controls="gravidanza"
-                            aria-selected="true">Gravidanza</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="newborn-tab" data-bs-toggle="tab" data-bs-target="#newborn"
-                            type="button" role="tab" aria-controls="newborn" aria-selected="false">Newborn</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids" type="button"
-                            role="tab" aria-controls="kids" aria-selected="false">Kids</button>
-                    </li>
-                </ul>
-                <div class="tabs-content" id="gridTabContent">
-                    <div class="tab-pane fade show active" id="gravidanza" role="tabpanel"
-                        aria-labelledby="gravidanza-tab">
-                        <div class="grid__container grid--foto" id="#portfolioGrid" data-toggle="modal"
-                            data-target="modalPortfolio">
-                            <?php 
-                                include 'inc/photogrid.php';
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="newborn" role="tabpanel" aria-labelledby="newborn-tab">
-                        <div class="grid__container grid--foto" id="#portfolioGrid" data-toggle="modal"
-                            data-target="modalPortfolio">
-                            <?php 
-                                include 'inc/photogrid.php';
-                            ?>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
-                        <div class="grid__container grid--foto" id="#portfolioGrid" data-toggle="modal"
-                            data-target="modalPortfolio">
-                            <?php 
-                                include 'inc/kidsgrid.php';
-                            ?>
-                        </div>
-                    </div>
+            <h3 class="fs-1 text-center">PORTFOLIO</h3>
+            <ul class="nav nav-pills justify-content-center my-5" id="portfolioTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="gravidanza-tab" data-bs-toggle="tab"
+                        data-bs-target="#gravidanza" type="button" role="tab" aria-controls="gravidanza"
+                        aria-selected="false">Gravidanza</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="neonati-tab" data-bs-toggle="tab" data-bs-target="#neonati"
+                        type="button" role="tab" aria-controls="neonati" aria-selected="true">Neonati</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bambini-tab" data-bs-toggle="tab" data-bs-target="#bambini"
+                        type="button" role="tab" aria-controls="bambini" aria-selected="false">Bambini</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="portfolioTabContent">
+                <div class="tab-pane fade show active" id="gravidanza" role="tabpanel" aria-labelledby="gravidanza-tab">
+                    <?php 
+                        $dir = 'images/photo/masonry/gravidanza';
+                        $tipologia= 'Gravidanza';
+                        include('inc/portfolio.php'); 
+                    ?>
+                </div>
+                <div class="tab-pane fade" id="neonati" role="tabpanel" aria-labelledby="neonati-tab">
+                    <?php 
+                        $dir = 'images/photo/masonry/newborn';
+                        $tipologia= 'Neonati';
+                        include('inc/portfolio.php'); 
+                    ?>
+                </div>
+
+                <div class="tab-pane fade" id="bambini" role="tabpanel" aria-labelledby="bambini-tab">
+                    <?php 
+                        $dir = 'images/photo/masonry/kids';
+                        $tipologia= 'Bambini';
+                        include('inc/portfolio.php'); 
+                    ?>
                 </div>
             </div>
         </section>
+
 
         <!-- CONTACT FORM -->
         <section id="sectionContatti" class="section-contatti">
@@ -326,7 +325,7 @@
         </section>
 
         <!-- PALETTE -->
-        <div class="conatiner palette__container d-none">
+        <div class="conatiner palette__container d-block">
             <div class="row">
                 <div class="col-1 color-primary-1">primary-1</div>
                 <div class="col-1 color-primary-2">primary-2</div>
@@ -362,54 +361,89 @@
 
             <p>&copy; 2017-2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
         </footer>
+
         <!-- MODALS -->
-        <!-- Modal markup: https://getbootstrap.com/docs/5/components/modal/ -->
-        <div class="modal fade" id="modalPortfolio" tabindex="-1" aria-labelledby="modalPortfolioLabel"
+        <!-- Modal Gravidanza -->
+        <div class="modal fade" id="modalGravidanza" tabindex="-1" aria-labelledby="modalGravidanzaLabel"
             aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalPortfolioLabel">PORTFOLIO</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <!-- Carousel markup: https://getbootstrap.com/docs/5/components/carousel/ -->
-                        <div id="carouselPortfolio" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselGravidanza" class="carousel slide carousel--portfolio" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/photo/grid/ovale.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/photo/grid/punk.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/photo/grid/gray.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/photo/grid/wind.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/photo/grid/black.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/photo/grid/bn.jpg" class="d-block w-100" alt="...">
-                                </div>
+                                <?php echo createModalGallery('images/photo/masonry/gravidanza'); ?>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio"
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGravidanza"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio"
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselGravidanza"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Neonati -->
+        <div class="modal fade" id="modalNeonati" tabindex="-1" aria-labelledby="modalNeonatiLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Carousel markup: https://getbootstrap.com/docs/5/components/carousel/ -->
+                        <div id="carouselNeonati" class="carousel slide carousel--portfolio" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <?php echo createModalGallery('images/photo/masonry/newborn'); ?>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeonati"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselNeonati"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Bambini -->
+        <div class="modal fade" id="modalBambini" tabindex="-1" aria-labelledby="modalBambiniLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Carousel markup: https://getbootstrap.com/docs/5/components/carousel/ -->
+                        <div id="carouselBambini" class="carousel slide carousel--portfolio" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <?php echo createModalGallery('images/photo/masonry/kids'); ?>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBambini"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselBambini"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -425,7 +459,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -63,10 +63,78 @@
 
 // >>> BS TABS
 
-// Override di un comportamento strano: i contenuti dei tab si aggiungono alle altezze precedenti.
-.tab-pane {
-    display: none;
+// >>> PORTFOLIO TABS
+// > TABS NAV
+.nav-pills .nav-link.active {
+    background-color: $primary-400;
+    color: $primary-900;
 }
-.tab-pane.active {
-    display: block;
+.nav-pills .nav-link {
+    color: $primary-400;
 }
+
+
+
+// >>> ISOTOPE
+
+.grid {
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.grid-item, .grid-sizer {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.gutter-sizer {
+    width: 0%;
+}
+
+
+// >> MODALS
+
+// Dark modal
+.modal-content {
+    background-color: #000000d6;
+}
+.modal-header {
+    border-bottom: none;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    .btn-close {
+        background-color: #fff;
+    }
+}
+// Center and resize images
+.carousel--portfolio {
+    .carousel-item img {
+        height: 88vh;
+        margin: 4vh auto 0;
+        width: auto;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .grid {
+        width: 100%;
+    }
+    .grid-item, .grid-sizer {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+    .gutter-sizer {
+        width: 2%;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .grid-item, .grid-sizer {
+        width: 32.4%;
+        margin-bottom: 15px;
+    }
+    .gutter-sizer {
+        width: 1%;
+    }
+}
+
