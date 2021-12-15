@@ -93,6 +93,7 @@
 
 // >> MODALS
 
+
 // Dark modal
 .modal-content {
     background-color: #000000d6;
@@ -106,14 +107,16 @@
         background-color: #fff;
     }
 }
-// Center and resize images
+
 .carousel--portfolio {
-    .carousel-item img {
-        height: 88vh;
-        margin: 4vh auto 0;
-        width: auto;
+    .carousel-item {
+        img {
+            max-height: 90vh;
+            margin: 3vh auto;
+        }
     }
 }
+
 
 @include media-breakpoint-up(md) {
     .grid {

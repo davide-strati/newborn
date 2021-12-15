@@ -2,7 +2,7 @@
 
     // Recupera le immagini della cartella photo>grid
     function getDirImages($directory) {
-        $images = array_diff(scandir($directory), array('.', '..'));
+        $images = array_diff(scandir($directory), array('.', '..', 'thumbnails'));
         return $images;
     }
 
@@ -28,7 +28,7 @@
             $imagePath = $dir.'/'.$image;
             $altText = getDescription($imagePath);
             echo '<div class="grid-item"><img src="' . $imagePath . '" alt="' . $altText . '" data-bs-target="#carousel' . $tipologia . '"
-            data-bs-slide-to="' . $slide . '" class="img-fluid"></div>';
+            data-bs-slide-to="' . $slide . '" class="img-fluid img-' . $slide . '"></div>';
             $slide++;
         }
     }
@@ -47,7 +47,7 @@
             $altText = getDescription($imagePath);
             echo 
             '<div class="carousel-item ' . $class .'">
-                <img src="' . $imagePath . '" alt="' . $altText . '" class="d-block" alt="" class="img-fluid">
+                <img data-src="' . $imagePath . '" alt="' . $altText . '" class="d-block lazy img-fluid">
             </div>';
             $i++;
         }

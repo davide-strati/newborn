@@ -65,7 +65,7 @@ $bs-font-sans-serif: 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, 
 $body-text: $primary-700;
 
 // Layout elements
-$sfondo-header: $gray-900;
+$sfondo-header: rgba(0,0,0,0.8);
 $sfondo-intro: url('../images/bg/sfondo-lente.webp') no-repeat scroll bottom right transparent;
 
 
@@ -79,8 +79,7 @@ $sfondo-intro: url('../images/bg/sfondo-lente.webp') no-repeat scroll bottom rig
   --verde-cta: #35B29C;
   --verde-cta-l-1: #38D2B7; 
   --verde-cta-l-2: #87F3E0;
-  --bg-brown-gradient: url("../images/bg/ondulate-cyan-pattern.png") repeat,
-  radial-gradient(64.22% 64.22% at 12.81% 16.91%, rgba(245, 240, 210, 0.2352) 0%, rgba(0, 0, 0, 0.24) 85.94%), #514545;
+  --bg-brown-gradient: radial-gradient(64.22% 64.22% at 12.81% 16.91%, rgba(245, 240, 210, 0.2352) 0%, rgba(0, 0, 0, 0.24) 85.94%), #514545;
   --bg-light-brown-waves: url('../images/bg/light-brown-waves.jpg');
 
   --sfondo-portfolio: var(--bg-brown-gradient);

@@ -4,6 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="newborn photography, foto neonati, servizi fotografici neonati, foto gravidanza, foto mamme, foto genitori, foto bambini, foto professionali in studio">
+    <meta desription="Foto professionali di neonati, genitori e bambini a Bologna, Barbara Lei è specializzata nella realizzazione di fotografie di neonati e della loro famiglia, ralizzate in studio">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:type" content="website">
+    <meta property="title" content="Foto professionali di neonati e famiglia a Bologna">
+    <meta property="description" content="Realizzazione di servizi fotografici per neonati e per i loro genitori, in studio, a Bologna e provincia.">
+    <meta property="image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Foto professionali di neonati e famiglia a Bologna">
+    <meta property="twitter:description" content="Foto newborn e di bambini a Bologna">
     <title>NEW BORN BOLOGNA</title>
     <!-- Custom styles for this template with bootstrap css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +25,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
@@ -20,21 +34,43 @@
 ?>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md">
-            <div class="container justify-content-center">
-                <a class="navbar-brand col-10 col-md-4 col-xl-3" href="#">
-                    <img src="images/barbara-lei-logo.svg" class="d-inline-block align-top img-fluid w-100"
-                        alt="Il logo di Barbara Lei, fotografa" loading="lazy" width="30" height="30">
-                </a>
+    <header class="fixed-top text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img src="images/barbara-lei-logo.svg" class="d-inline-block align-top img-fluid w-75"
+                        alt="Il logo di Barbara Lei, fotografa" width="30" height="30">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerMenu" aria-controls="navbarTogglerMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerMenu">
+                    <ul class="navbar-nav flex-row flex-wrap text-white">
+                        <li class="nav-item px-2"><a href="#servizi" class="nav-link"
+                                alt="Servizi fotografici per neonati, gravidanza e bambini 0-12">Servizi</a></li>
+                        <li class="nav-item px-2"><a href="#intro" class="nav-link"
+                                alt="La mia esperienza nel campo della fotografia">Chi sono</a></li>
+                        <li class="nav-item px-2"><a href="#portfolio" class="nav-link"
+                                alt="Il mio portfolio dedicato alle foto newborn, alle mamme incinta ed ai bambini">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2"><a href="#contatti" class="nav-link"
+                                alt="Contattami per un preventivo per un servizio fotografico dedicato">Contatti</a>
+                        </li>
+                        <li class="nav-item px-2"><a href="#stampa" class="nav-link"
+                                alt="Soluzioni per album fotografici o stampe di alta qualità, per conservare un ricordo o regalarlo a qualcuno">Stampe</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- MAIN SLIDER  -->
-        <section class="section-slider">
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <section id="sectionMainSlider" class="section-slider">
+            <div id="myCarousel" class="carousel carousel--main slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
                     <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
@@ -48,11 +84,11 @@
                             <source srcset="images/photo/slider/main/gravidanza/md-gravidanza.jpg"
                                 media="(max-width: 768px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/gravidanza/lg-gravidanza.jpg"
-                                media="(max-width: 1023px)" class="d-block w-100">
+                                media="(max-width: 1200px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/gravidanza/xxl-gravidanza.jpg"
-                                media="(max-width: 1439px)" class="d-block w-100">
+                                media="(max-width: 1440px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/gravidanza/xxxxl-gravidanza.jpg"
-                                media="(min-width: 1440px)" class="d-block w-100">
+                                media="(min-width: 1441px)" class="d-block w-100">
                             <img src="images/photo/slider/main/gravidanza/xxxxl-gravidanza.jpg" alt=""
                                 class="d-block w-100">
                         </picture>
@@ -63,12 +99,12 @@
                                 class="d-block w-100">
                             <source srcset="images/photo/slider/main/neonati/md-newborn.jpg" media="(max-width: 768px)"
                                 class="d-block w-100">
-                            <source srcset="images/photo/slider/main/neonati/lg-newborn.jpg" media="(max-width: 1023px)"
+                            <source srcset="images/photo/slider/main/neonati/lg-newborn.jpg" media="(max-width: 1200px)"
                                 class="d-block w-100">
                             <source srcset="images/photo/slider/main/neonati/xxl-newborn.jpg"
-                                media="(max-width: 1439px)" class="d-block w-100">
+                                media="(max-width: 1440px)" class="d-block w-100">
                             <source srcset="images/photo/slider/main/neonati/xxxxl-newborn.jpg"
-                                media="(min-width: 1440px)" class="d-block w-100">
+                                media="(min-width: 1441px)" class="d-block w-100">
                             <img src="images/photo/slider/main/neonati/xxxxl-newborn.jpg" alt="" class="d-block w-100">
                         </picture>
                     </div>
@@ -78,11 +114,11 @@
                                 class="d-block w-100">
                             <source srcset="images/photo/slider/main/bambini/md-kids.jpg" media="(max-width: 768px)"
                                 class="d-block w-100">
-                            <source srcset="images/photo/slider/main/bambini/lg-kids.jpg" media="(max-width: 1023px)"
+                            <source srcset="images/photo/slider/main/bambini/lg-kids.jpg" media="(max-width: 1200px)"
                                 class="d-block w-100">
-                            <source srcset="images/photo/slider/main/bambini/xxl-kids.jpg" media="(max-width: 1439px)"
+                            <source srcset="images/photo/slider/main/bambini/xxl-kids.jpg" media="(max-width: 1440px)"
                                 class="d-block w-100">
-                            <source srcset="images/photo/slider/main/bambini/xxxxl-kids.jpg" media="(min-width: 1440px)"
+                            <source srcset="images/photo/slider/main/bambini/xxxxl-kids.jpg" media="(min-width: 1441px)"
                                 class="d-block w-100">
                             <img src="images/photo/slider/main/bambini/slide.jpg" alt="" class="d-block w-100">
                         </picture>
@@ -99,7 +135,8 @@
             </div>
         </section>
         <!-- SECTION SERVICES -->
-        <section class="section-services">
+        <section id="sectionServizi" class="section-services">
+            <a class="anchor" id="servizi"></a>
             <div class="container-fluid p-5">
                 <div class="row section-title pt-3 pb-5">
                     <h1 class="text-center">SERVIZI FOTOGRAFICI</h1>
@@ -134,14 +171,16 @@
                             <strong>festeggiare
                                 un compleanno, o in qualsiasi momento della loro crescita</strong>, si possono fare dei
                             bei ritratti,
-                            giocando con loro, per catturare lo stupore e la meraviglia nei loro sorrisi.</p>
+                            giocando con loro, per catturare lo stupore e la meraviglia nei loro sorrisi.
+                        </p>
                     </div><!-- /.col-lg-4 -->
                 </div>
             </div>
         </section>
         <hr class="featurette-divider">
         <!-- INTRO SUB-SERCTION -->
-        <section class="section-intro">
+        <section id="sectionIntro" class="section-intro">
+            <a class="anchor" id="intro"></a>
             <div class="container py-5">
                 <div class="row featurette py-5">
                     <div class="col-12 col-lg-7">
@@ -185,6 +224,7 @@
 
         <!-- PHOTO TABS -->
         <section id="photo-grid" class="photo-grid py-5 bg--dark">
+            <a class="anchor" id="portfolio"></a>
             <h3 class="fs-1 text-center">PORTFOLIO</h3>
             <ul class="nav nav-pills justify-content-center my-5" id="portfolioTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -204,14 +244,14 @@
             <div class="tab-content" id="portfolioTabContent">
                 <div class="tab-pane fade show active" id="gravidanza" role="tabpanel" aria-labelledby="gravidanza-tab">
                     <?php 
-                        $dir = 'images/photo/masonry/gravidanza';
+                        $dir = 'images/photo/masonry/gravidanza/thumbnails';
                         $tipologia= 'Gravidanza';
                         include('inc/portfolio.php'); 
                     ?>
                 </div>
                 <div class="tab-pane fade" id="neonati" role="tabpanel" aria-labelledby="neonati-tab">
                     <?php 
-                        $dir = 'images/photo/masonry/newborn';
+                        $dir = 'images/photo/masonry/newborn/thumbnails';
                         $tipologia= 'Neonati';
                         include('inc/portfolio.php'); 
                     ?>
@@ -219,7 +259,7 @@
 
                 <div class="tab-pane fade" id="bambini" role="tabpanel" aria-labelledby="bambini-tab">
                     <?php 
-                        $dir = 'images/photo/masonry/kids';
+                        $dir = 'images/photo/masonry/kids/thumbnails';
                         $tipologia= 'Bambini';
                         include('inc/portfolio.php'); 
                     ?>
@@ -230,6 +270,7 @@
 
         <!-- CONTACT FORM -->
         <section id="sectionContatti" class="section-contatti">
+            <a class="anchor" id="contatti"></a>
             <h3 class="fs-1 text-center py-5">CONTATTAMI</h3>
             <form action="" id="formContatti" class="bb-form form--contatti">
                 <div class="container">
@@ -289,34 +330,48 @@
         </section>
 
         <!-- SEZIONE CAROSELLO -->
-        <section class="section-carousel">
-            <div id="carouselServizi" class="carousel slide carousel-servizi" data-bs-ride="carousel">
-
+        <section id="sectionGadget" class="section-carousel">
+            <a class="anchor" id="stampa"></a>
+            <div id="carouselGadget" class="carousel slide carousel--gadget" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/photo/carousel/servizi/slider-gravidanza.jpg" class="d-block w-100" alt="...">
+                    <!-- Album fotografico -->
+                    <div class="carousel-item album active">
+                        <picture>
+                            <source srcset="images/photo/bottom-slider/album-fotografico-mobile.jpg"
+                                media="(max-width: 767px)" class="d-block w-100">
+                            <img src="images/photo/bottom-slider/album-fotografico.jpg" loading="lazy" class="d-block w-100" alt="...">
+                        </picture>
+                        <div class="carousel-caption">
+                            <div class="caption__block">
+                                <img src="images/photo/bottom-slider/cuore.png" alt="" class="d-block caption__image">
+                                <h4 class="caption__title">I RICORDI SONO IMPORTANTI</h4>
+                                <p class="caption__text">CONSERVALI CON CURA <span>CON UN ALBUM FOTOGRAFICO</span></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/photo/carousel/servizi/slider-gravidanza.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/photo/carousel/servizi/slider-gravidanza.jpg" class="d-block w-100" alt="...">
+                    <!-- Album fotografico -->
+                    <div class="carousel-item album">
+                        <picture>
+                            <source srcset="images/photo/bottom-slider/album2-mobile.jpg"
+                                media="(max-width: 767px)" class="d-block w-100">
+                            <img src="images/photo/bottom-slider/album2.jpg" loading="lazy" class="d-block w-100" alt="...">
+                        </picture>
+                        <div class="carousel-caption">
+                            <div class="caption__block">
+                                <img src="images/photo/bottom-slider/cuore.png" alt="" class="d-block caption__image">
+                                <h4 class="caption__title">I RICORDI SONO IMPORTANTI</h4>
+                                <p class="caption__text">CONSERVALI CON CURA <span>CON UN ALBUM FOTOGRAFICO</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-indicators indicators--text">
-                    <button type="button" data-bs-target="#carouselServizi" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1">Gravidanza</button>
-                    <button type="button" data-bs-target="#carouselServizi" data-bs-slide-to="1"
-                        aria-label="Slide 2">Newborn</button>
-                    <button type="button" data-bs-target="#carouselServizi" data-bs-slide-to="2" aria-label="Slide 3">Un
-                        anno</button>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServizi"
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGadget"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselServizi"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselGadget"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -325,7 +380,7 @@
         </section>
 
         <!-- PALETTE -->
-        <div class="conatiner palette__container d-block">
+        <div class="conatiner palette__container d-none">
             <div class="row">
                 <div class="col-1 color-primary-1">primary-1</div>
                 <div class="col-1 color-primary-2">primary-2</div>
@@ -364,7 +419,7 @@
 
         <!-- MODALS -->
         <!-- Modal Gravidanza -->
-        <div class="modal fade" id="modalGravidanza" tabindex="-1" aria-labelledby="modalGravidanzaLabel"
+        <div class="modal modal--gravidanza fade" id="modalGravidanza" tabindex="-1" aria-labelledby="modalGravidanzaLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
@@ -373,7 +428,7 @@
                     </div>
                     <div class="modal-body">
                         <!-- Carousel markup: https://getbootstrap.com/docs/5/components/carousel/ -->
-                        <div id="carouselGravidanza" class="carousel slide carousel--portfolio" data-bs-ride="carousel">
+                        <div id="carouselGravidanza" class="carousel slide carousel--portfolio" data-bs-ride="carousel" data-bs-interval="false">
                             <div class="carousel-inner">
                                 <?php echo createModalGallery('images/photo/masonry/gravidanza'); ?>
                             </div>
@@ -393,7 +448,7 @@
             </div>
         </div>
         <!-- Modal Neonati -->
-        <div class="modal fade" id="modalNeonati" tabindex="-1" aria-labelledby="modalNeonatiLabel" aria-hidden="true">
+        <div class="modal modal--neonati fade" id="modalNeonati" tabindex="-1" aria-labelledby="modalNeonatiLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -421,7 +476,7 @@
             </div>
         </div>
         <!-- Modal Bambini -->
-        <div class="modal fade" id="modalBambini" tabindex="-1" aria-labelledby="modalBambiniLabel" aria-hidden="true">
+        <div class="modal modal--kids fade" id="modalBambini" tabindex="-1" aria-labelledby="modalBambiniLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -459,6 +514,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/script.js"></script>
 </body>
