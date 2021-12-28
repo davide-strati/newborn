@@ -49,8 +49,7 @@
         box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.16), 0px 1.02298px 15.0665px rgba(0, 0, 0, 0.035);
         border-radius: 3px;
         padding: 16px 32px;
-        color: #FFF;
-        font-size: $h3-font-size;
+        color: #FFF;        
         letter-spacing: 0.105em;
         text-shadow: 1px 1px 0 $gray;
         text-transform: uppercase;
@@ -119,6 +118,7 @@
 
 
 @include media-breakpoint-up(md) {
+    .btn--cta {font-size: $h3-font-size !important;}
     .grid {
         width: 100%;
     }
@@ -139,5 +139,6 @@
     .gutter-sizer {
         width: 1%;
     }
+    
 }
 

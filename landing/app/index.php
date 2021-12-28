@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="newborn photography, foto neonati, servizi fotografici neonati, foto gravidanza, foto mamme, foto genitori, foto bambini, foto professionali in studio">
-    <meta desription="Foto professionali di neonati, genitori e bambini a Bologna, Barbara Lei è specializzata nella realizzazione di fotografie di neonati e della loro famiglia, ralizzate in studio">
+    <meta name="keywords"
+        content="newborn photography, foto neonati, servizi fotografici neonati, foto gravidanza, foto mamme, foto genitori, foto bambini, foto professionali in studio">
+    <meta
+        desription="Foto professionali di neonati, genitori e bambini a Bologna, Barbara Lei è specializzata nella realizzazione di fotografie di neonati e della loro famiglia, ralizzate in studio">
+    <meta property="image" content="">
     <meta property="og:locale" content="it_IT">
     <meta property="og:type" content="website">
-    <meta property="title" content="Foto professionali di neonati e famiglia a Bologna">
-    <meta property="description" content="Realizzazione di servizi fotografici per neonati e per i loro genitori, in studio, a Bologna e provincia.">
-    <meta property="image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:title" content="Foto professionali di neonati e famiglia a Bologna">
+    <meta property="og:description"
+        content="Realizzazione di servizi fotografici per neonati e per i loro genitori, in studio, a Bologna e provincia.">
     <meta property="og:site_name" content="">
     <meta property="og:url" content="">
     <meta property="twitter:card" content="summary">
@@ -175,6 +177,9 @@
                         </p>
                     </div><!-- /.col-lg-4 -->
                 </div>
+                <div class="text-center mt-5 pt-3">
+                    <a href="#sectionContatti" class="btn btn--cta text-center">PRENOTA IL TUO SERVIZIO</a>
+                </div>
             </div>
         </section>
         <hr class="featurette-divider">
@@ -184,39 +189,26 @@
             <div class="container py-5">
                 <div class="row featurette py-5">
                     <div class="col-12 col-lg-7">
-                        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow
-                                your
-                                mind.</span></h2>
-                        <p class="lead">Nibh nulla commodo sed egestas fringilla orci. <br>
-                            Egestas egestas malesuada eu consequat adipiscing tristique velit. Sagittis a, felis,
-                            molestie
-                            dictum ac maecenas. Egestas eu suspendisse fermentum fusce scelerisque eu. Adipiscing
-                            consequat
-                            mauris nisl, sed. </p>
+                        <p class="lead">La fotografia è la mia grande passione, e in tutti questi anni ho raggiunto
+                            competenze in tanti ambiti diversi. Dalla fotografia di moda, sia con modelle che accessori
+                            in still life, dai gioielli al design, dal food ai matrimoni, alle foto industriali, di
+                            architettura e di interni. Ora mi sto dedicando soprattutto ai ritratti, e i miei soggetti
+                            preferiti sono le donne in gravidanza e i bambini, con la loro purezza e magia.</p>
+                        <p>Dietro a una fotografia, oltre all'attrezzatura, ai software e alle luci, c'è un fotografo
+                            con la sua personale sensibilità, la sua visione creativa, la sua passione, e tutto il suo
+                            vissuto e la sua formazione. </p>
 
-                        <p>Aliquet morbi nisl tristique tellus. Ipsum accumsan non erat ac consectetur sit aliquam
-                            turpis
-                            aliquam. Volutpat scelerisque lectus nunc, ac id libero, dignissim.
-                            Venenatis eu purus quis convallis accumsan euismod gravida enim laoreet.</p>
+                            <p>Il mio stile racchiude tutto questo, e il mio grande amore per la fotografia e per i
+                            bambini.</p>
 
-                        <ul>
-                            <li>Integer nunc et semper ornare. Tincidunt rhoncus, nisl quam pulvinar at quisque
-                                curabitur.
-                            </li>
-                            <li> In sodales a bibendum
-                                habitant eget. Nascetur lorem volutpat morbi enim metus viverra.</li>
-                            <li> Sagittis enim mi sem etiam. Amet mollis eget fermentum accumsan, sit cras</li>
-                        </ul>
+                            <p>Prendo pochi appuntamenti al mese per prepararli al meglio: l'allestimento dello studio
+                            fotografico, la scelta delle pose e dei vestiti, il foto-ritocco delle immagini sono il
+                            frutto di un lavoro che mi piace sviluppare assieme al cliente, per rendere questi momenti
+                            unici.</p>
 
-                        <p>Ut placerat magna egestas donec pharetra dictum eget. Blandit ornare proin amet et, in in
-                            quis
-                            egestas libero. Felis
-                            consectetur adipiscing vel fringilla placerat maecenas sit nunc. Mattis urna, fringilla
-                            dignissim in id mauris nec. Id
-                            justo, diam ac varius nisl pretium sit accumsan. . </p>
-                        <div class="text-center pt-3">
-                            <a href="#sectionContatti" class="btn btn--cta text-center">CONTATTAMI</a>
-                        </div>
+                            <p>Se hai bisogno di altre informazioni sui pacchetti e sui loro prezzi, o vuoi prenotare o
+                            regalare un servizio fotografico, chiamami ed iniziamo a studiare assieme che veste dare a
+                            questi ricordi davvero speciali.</p>
                     </div>
                 </div>
             </div>
@@ -315,7 +307,7 @@
                             <div class="form-item item--checkbox d-flex align-items-center">
                                 <input class="form-check-input mr-2" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Ho letto e accettato sta minchia di <a href="#"
+                                    Ho letto e accettato la <a href="#"
                                         alt="Un link alla pagina dedicata alla privacy policy" target="_self">privay
                                         policy</a>.
                                 </label>
@@ -339,7 +331,8 @@
                         <picture>
                             <source srcset="images/photo/bottom-slider/album-fotografico-mobile.jpg"
                                 media="(max-width: 767px)" class="d-block w-100">
-                            <img src="images/photo/bottom-slider/album-fotografico.jpg" loading="lazy" class="d-block w-100" alt="...">
+                            <img src="images/photo/bottom-slider/album-fotografico.jpg" loading="lazy"
+                                class="d-block w-100" alt="...">
                         </picture>
                         <div class="carousel-caption">
                             <div class="caption__block">
@@ -352,15 +345,16 @@
                     <!-- Album fotografico -->
                     <div class="carousel-item album">
                         <picture>
-                            <source srcset="images/photo/bottom-slider/album2-mobile.jpg"
+                            <source srcset="images/photo/bottom-slider/stampe-fotografiche-mobile.jpg"
                                 media="(max-width: 767px)" class="d-block w-100">
-                            <img src="images/photo/bottom-slider/album2.jpg" loading="lazy" class="d-block w-100" alt="...">
+                            <img src="images/photo/bottom-slider/stampe-fotografiche.jpg" loading="lazy"
+                                class="d-block w-100" alt="...">
                         </picture>
                         <div class="carousel-caption">
                             <div class="caption__block">
                                 <img src="images/photo/bottom-slider/cuore.png" alt="" class="d-block caption__image">
-                                <h4 class="caption__title">I RICORDI SONO IMPORTANTI</h4>
-                                <p class="caption__text">CONSERVALI CON CURA <span>CON UN ALBUM FOTOGRAFICO</span></p>
+                                <h4 class="caption__title">STAMPE FINE ART</h4>
+                                <p class="caption__text">STAMPE SU TELA O CARTA FINE ART</p>
                             </div>
                         </div>
                     </div>
@@ -419,8 +413,8 @@
 
         <!-- MODALS -->
         <!-- Modal Gravidanza -->
-        <div class="modal modal--gravidanza fade" id="modalGravidanza" tabindex="-1" aria-labelledby="modalGravidanzaLabel"
-            aria-hidden="true">
+        <div class="modal modal--gravidanza fade" id="modalGravidanza" tabindex="-1"
+            aria-labelledby="modalGravidanzaLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -428,7 +422,8 @@
                     </div>
                     <div class="modal-body">
                         <!-- Carousel markup: https://getbootstrap.com/docs/5/components/carousel/ -->
-                        <div id="carouselGravidanza" class="carousel slide carousel--portfolio" data-bs-ride="carousel" data-bs-interval="false">
+                        <div id="carouselGravidanza" class="carousel slide carousel--portfolio" data-bs-ride="carousel"
+                            data-bs-interval="false">
                             <div class="carousel-inner">
                                 <?php echo createModalGallery('images/photo/masonry/gravidanza'); ?>
                             </div>
@@ -448,7 +443,8 @@
             </div>
         </div>
         <!-- Modal Neonati -->
-        <div class="modal modal--neonati fade" id="modalNeonati" tabindex="-1" aria-labelledby="modalNeonatiLabel" aria-hidden="true">
+        <div class="modal modal--neonati fade" id="modalNeonati" tabindex="-1" aria-labelledby="modalNeonatiLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -476,7 +472,8 @@
             </div>
         </div>
         <!-- Modal Bambini -->
-        <div class="modal modal--kids fade" id="modalBambini" tabindex="-1" aria-labelledby="modalBambiniLabel" aria-hidden="true">
+        <div class="modal modal--kids fade" id="modalBambini" tabindex="-1" aria-labelledby="modalBambiniLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">

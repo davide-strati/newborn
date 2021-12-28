@@ -62,11 +62,11 @@ $gradient-verde-cta: radial-gradient(105.56% 105.56% at 2.83% 3.99%, rgba(223, 2
 $gradient-verde-cta-hover: radial-gradient(105.56% 105.56% at 2.83% 3.99%, rgba(223, 236, 226, 0.372) 0%, rgba(14, 87, 39, 0.6) 100%), #AEE06E;
 // >>> Typo
 $bs-font-sans-serif: 'Quicksand', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$body-text: $primary-700;
+$body-text: $primary-900;
 
 // Layout elements
 $sfondo-header: rgba(0,0,0,0.8);
-$sfondo-intro: url('../images/bg/sfondo-lente.webp') no-repeat scroll bottom right transparent;
+$sfondo-intro: url('../images/bg/sfondo-lente.webp') no-repeat scroll top right transparent;
 
 
 
